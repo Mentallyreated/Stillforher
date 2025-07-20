@@ -1,0 +1,13 @@
+public/
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│   ├── music/
+│   │   └── lofi1.mp3
+│   ├── images/
+│   │   └── photo1.jpg
+│   ├── videos/
+│   │   └── dancer.mp4
+├── letters/
+│   └── letter1.html
