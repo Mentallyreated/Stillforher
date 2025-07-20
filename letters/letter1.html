@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Letter #1</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      padding: 2rem;
+      background: #0f0f0f;
+      color: #fff;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    button {
+      margin-top: 2rem;
+      padding: 0.8rem 1.2rem;
+      background: crimson;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h2>Letter #1</h2>
+  <p>
+    I'm sorry, I couldn't manage to make this website as best as it could be. Maybe because I'm lazy or I procrastinate till the last date... but it only happened because of me.
+    <br><br>
+    Hopefully you do enjoy this broke version too. Maybe we always had distance, and it was just me who ignored it. Funny, isn't it?
+    <br><br>
+    Please — don’t hurt yourself even if you want to.
+  </p>
+
+  <button onclick="melt()">Done with this shit</button>
+
+  <script>
+    function melt() {
+      document.body.style.transition = "all 3s";
+      document.body.style.color = "#0f0f0f";
+      document.body.style.background = "#0f0f0f";
+      document.body.innerHTML = "";
+      setTimeout(() => {
+        window.location.href = "/";
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
