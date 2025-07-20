@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Still Here</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="intro" class="screen">
+    <video autoplay muted loop id="bg-video">
+      <source src="assets/videos/dancer.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay">
+      <h1>StillHere</h1>
+      <input id="accessCode" type="password" placeholder="Enter access code" />
+      <button onclick="verifyCode()">Enter</button>
+    </div>
+  </div>
+
+  <div id="dashboard" class="screen hidden">
+    <div id="petIntro">Hi... I've been waiting 😼</div>
+    <div class="rope-zone">
+      <button class="rope" onclick="openSection('music')">🎵</button>
+      <button class="rope" onclick="openSection('letters')">💌</button>
+      <button class="rope" onclick="openSection('journal')">📖</button>
+      <button class="rope" onclick="openSection('gallery')">🖼️</button>
+    </div>
+    <div id="sectionContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
