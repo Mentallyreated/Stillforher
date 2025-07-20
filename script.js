@@ -30,7 +30,9 @@ function openSection(section) {
     container.innerHTML = `
       <h2>💌 Letters</h2>
       <p>You’ll receive one new letter a day…</p>
-      <div class="letter-box">Letter #01: “done with this shit”</div>
+      <a href="letters/letter1.html" target="_blank">
+        <button>Read Today’s Letter</button>
+      </a>
     `;
   }
 
@@ -45,8 +47,7 @@ function openSection(section) {
   else if (section === "gallery") {
     container.innerHTML = `
       <h2>🖼️ Memories</h2>
-      <img src="assets/images/photo1.jpg" alt="memory" style="width: 200px; border-radius: 12px;" />
-      <p>A moment that smiled at you.</p>
+      <p>(Upload coming soon)</p>
     `;
   }
 }
