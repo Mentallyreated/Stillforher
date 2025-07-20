@@ -17,12 +17,36 @@ function openSection(section) {
   container.innerHTML = "";
 
   if (section === "music") {
-    container.innerHTML = `<h2>🎵 Music Section</h2><p>Your playlist goes here.</p>`;
-  } else if (section === "letters") {
-    container.innerHTML = `<h2>💌 Letters</h2><p>One letter a day keeps the ghosts away 😼</p>`;
-  } else if (section === "journal") {
-    container.innerHTML = `<h2>📖 Real Me</h2><p>Your journal starts here.</p>`;
-  } else if (section === "gallery") {
-    container.innerHTML = `<h2>🖼️ Memories</h2><p>Photos that smile back.</p>`;
+    container.innerHTML = `
+      <h2>🎵 Mood Music</h2>
+      <audio controls autoplay loop>
+        <source src="assets/music/lofi1.mp3" type="audio/mp3">
+        Your browser does not support audio.
+      </audio>
+    `;
+  }
+
+  else if (section === "letters") {
+    container.innerHTML = `
+      <h2>💌 Letters</h2>
+      <p>You’ll receive one new letter a day…</p>
+      <div class="letter-box">Letter #01: “done with this shit”</div>
+    `;
+  }
+
+  else if (section === "journal") {
+    container.innerHTML = `
+      <h2>📖 Real Me</h2>
+      <p>This is your private journal. Type what you feel.</p>
+      <textarea rows="6" cols="40" placeholder="Start writing..."></textarea>
+    `;
+  }
+
+  else if (section === "gallery") {
+    container.innerHTML = `
+      <h2>🖼️ Memories</h2>
+      <img src="assets/images/photo1.jpg" alt="memory" style="width: 200px; border-radius: 12px;" />
+      <p>A moment that smiled at you.</p>
+    `;
   }
 }
